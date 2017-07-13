@@ -1,3 +1,17 @@
-<p>
-  food-list works!
-</p>
+<section>
+  LIST OF FOODS
+
+    <ul>
+      <div class="eachCard" *ngFor= 'let oneFood of foods'>
+        <li>
+          <div class="foodImage">
+            <img [src]="oneFood.image" style="height:100px">
+          </div>
+          <div class="foodName">
+            <h3>{{oneFood.name}}</h3>
+          </div>
+
+        </li>
+      </div>
+    </ul>
+</section>

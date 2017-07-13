@@ -1,0 +1,13 @@
+.eachCard{
+  border: solid black;
+  width: 500px;
+  height: 150px;
+  margin: 20px;
+}
+.foodImage{
+  float: left;
+  padding: 10px;
+}
+.foodName{
+  float: left;
+}
