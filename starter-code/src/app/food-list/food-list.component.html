@@ -1,14 +1,24 @@
 <section>
+  <label for="food-search"> Food Search</label>
+  <input type="search" name="" id="food-search"
+            [(ngModel)]='foodSearchText'>
+
+
+</section>
+
+<section>
   LIST OF FOODS
 
     <ul>
-      <div class="eachCard" *ngFor= 'let oneFood of foods'>
+      <div class="eachCard" *ngFor= 'let oneFood of (foods | doTheSearch:foodSearchText)'>
         <li>
           <div class="foodImage">
             <img [src]="oneFood.image" style="height:100px">
           </div>
           <div class="foodName">
             <h3>{{oneFood.name}}</h3>
+            <h4>Calories:{{oneFood.calories}}</h4>
+            <h4>{{oneFood.quantity}}</h4>
           </div>
 
         </li>

@@ -1,8 +1,8 @@
 .eachCard{
   border: solid black;
   width: 500px;
-  height: 150px;
-  margin: 20px;
+  height: 130px;
+  margin-top: 10px;
 }
 .foodImage{
   float: left;
@@ -10,4 +10,7 @@
 }
 .foodName{
   float: left;
+}
+ul{
+  list-style-type: none;
 }
