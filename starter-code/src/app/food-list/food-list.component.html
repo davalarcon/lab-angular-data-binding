@@ -2,7 +2,25 @@
   <label for="food-search"> Food Search</label>
   <input type="search" name="" id="food-search"
             [(ngModel)]='foodSearchText'>
+</section>
 
+<section>
+  <div>
+    <label for="food-name-input">Enter Food name</label>
+    <input type="text" id="food-name-input" [(ngModel)]="newFood.name">
+  </div>
+
+  <div>
+    <label for="food-calories-input">Enter Food Calories</label>
+    <input type="number" id="food-calories-input" [(ngModel)]="newFood.calories">
+  </div>
+
+  <div>
+    <label for="food-image-input">Enter Pic Url</label>
+    <input type="text" id="food-name-input" [(ngModel)]="newFood.image">
+  </div>
+
+  <button (click)="addFood()"> Submit New Food</button>
 
 </section>
 
@@ -20,7 +38,9 @@
             <h4>Calories:{{oneFood.calories}}</h4>
             <h4>{{oneFood.quantity}}</h4>
           </div>
-
+          <div class="button">
+          <button>Add for Today's Menu</button>
+          </div>
         </li>
       </div>
     </ul>
