@@ -8,6 +8,7 @@ import foods from '../foods';
 })
 export class FoodListComponent implements OnInit {
   foods: any [] = foods;
+  todayFood: any [] = this.todayFood;
   newFood: Object = {};
 
 
@@ -19,6 +20,10 @@ export class FoodListComponent implements OnInit {
   addFood(){
     console.log("New Food has been added");
     this.foods.push(this.newFood);
+  }
+  addForToday(){
+    console.log('Food for today added');
+    this.todayFood.push(this.foods)
   }
 
 }
